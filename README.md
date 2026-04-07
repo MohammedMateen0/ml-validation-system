@@ -27,6 +27,7 @@ data = [1, 2, 3, 6]
 validator.validate(data)
 
 print(validator.errors)
+```
 ## Day 2 Updates (Decorators)
 
 Added reusable decorators:
