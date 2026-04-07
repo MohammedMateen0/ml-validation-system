@@ -1,3 +1,4 @@
+from decorators import timer
 class DataValidator:
     def __init__(self, column_name: str, allow_null: bool = False):
         self.column_name = column_name
@@ -29,7 +30,7 @@ class RatingValidator(DataValidator):
         super().__init__(column_name, allow_null=True)
         self.min_r = min_r
         self.max_r = max_r
-
+    @timer
     def validate(self, values: list) -> bool:
         super().validate(values)
 

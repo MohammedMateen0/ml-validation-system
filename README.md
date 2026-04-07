@@ -27,3 +27,22 @@ data = [1, 2, 3, 6]
 validator.validate(data)
 
 print(validator.errors)
+## Day 2 Updates (Decorators)
+
+Added reusable decorators:
+- `@timer` — measures execution time
+- `@retry` — retries failed operations
+
+### Concepts Covered
+- First-class functions
+- Closures
+- Decorators
+- Decorator factories
+- `functools.wraps`
+
+### Example
+
+```python
+@timer
+def validate(...):
+    ...
