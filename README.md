@@ -27,6 +27,7 @@ data = [1, 2, 3, 6]
 validator.validate(data)
 
 print(validator.errors)
+```
 ## Day 2 Updates (Decorators)
 
 Added reusable decorators:
@@ -45,4 +46,22 @@ Added reusable decorators:
 ```python
 @timer
 def validate(...):
-    ...
+    ```
+'''
+## Day 3 Updates (Exception Handling)
+
+Implemented a structured exception system for ML pipelines.
+
+### Features
+- Custom exception hierarchy (`MLPipelineError`)
+- Fail-fast validation (`DataValidationError`)
+- Model loading errors (`ModelNotFoundError`)
+- Exception chaining (`raise ... from e`)
+- Graceful fallback (`safe_parse_rating`)
+
+### Concepts Covered
+- try / except / else / finally
+- custom exceptions
+- exception propagation
+- logging integration
+- fail-fast vs graceful fallback
