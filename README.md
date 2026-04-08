@@ -46,8 +46,8 @@ Added reusable decorators:
 ```python
 @timer
 def validate(...):
-    ```
-'''
+```
+
 ## Day 3 Updates (Exception Handling)
 
 Implemented a structured exception system for ML pipelines.
@@ -65,3 +65,4 @@ Implemented a structured exception system for ML pipelines.
 - exception propagation
 - logging integration
 - fail-fast vs graceful fallback
+
