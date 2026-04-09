@@ -8,6 +8,7 @@ from exceptions import (
     ModelNotFoundError,
     DataValidationError,
 )
+from utils import normalize, apply_transform, parse_price
 
 def run_bank_demo():
     acc=BankAccount("Mateen",1000)
@@ -49,9 +50,17 @@ def run_exceptions_demo():
         )
     except DataValidationError as e:
         print(f"Column: {e.column} | Issue: {e.issue}")
+def run_utils_demo():
+    print(normalize([10, 20, 30]))
+
+    result = apply_transform([1.0, 4.0, 9.0], lambda x: x ** 0.5)
+    print(result)
+
+    print(parse_price("₹1,200"))
 
 
 if __name__=='__main__':
     run_bank_demo()
     run_validator_demo()
     run_exceptions_demo()
+    run_utils_demo()

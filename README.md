@@ -66,3 +66,23 @@ Implemented a structured exception system for ML pipelines.
 - logging integration
 - fail-fast vs graceful fallback
 
+## Day 4 Updates (Typing + Functional Utilities)
+
+### Features
+- Functional utilities (`normalize`, `apply_transform`)
+- Generic programming (`TypeVar`)
+- TypedDict for structured outputs
+- Protocol for ML model interface
+- Utility functions for preprocessing
+
+### Concepts Covered
+- Advanced typing (`TypedDict`, `Protocol`, `Annotated`)
+- Functional programming patterns
+- Generic functions
+- Interface-based design
+
+### Example
+
+```python
+normalize([10, 20, 30])
+apply_transform([1, 4, 9], lambda x: x**0.5)
