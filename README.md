@@ -86,3 +86,12 @@ Implemented a structured exception system for ML pipelines.
 ```python
 normalize([10, 20, 30])
 apply_transform([1, 4, 9], lambda x: x**0.5)
+```
+
+## Day 5 — Generators & Iterators
+
+- Lazy evaluation using generators
+- Batch processing for large datasets
+- Infinite sampler (ML training pattern)
+- Sliding window iterator
+- Memory optimization (list vs generator)
